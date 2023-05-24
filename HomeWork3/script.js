@@ -24,7 +24,8 @@ console.log(message);
 // (მომხმარებლისგან ინფორმაციის მისაღებად გამოიყენეთ prompt() ფუნქცია,)
 // (კონსოლში დასაბეჭდათ გამოიყენეთ console.log() ფუნქცია )
 
-if (prompt("შეიყვანეთ რიცხვი") % 2) {
+const number1 = Number(prompt("შეიყვანეთ რიცხვი"));
+if (number1 % 2) {
   console.log("რიცხვი არის კენტი");
 } else {
   console.log("რიცხვი არის ლუწი");
