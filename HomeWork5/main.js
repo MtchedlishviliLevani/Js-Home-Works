@@ -287,14 +287,14 @@ console.log(AvrgAge(data));
 // სადაც იქნება მომხმარებლები რომლებიც არ არიან 20 წელზე მეტის.
 
 function moreThan22YO(data) {
-  return data.filter((user) => user.age > 20);
+  return data.filter((user) => user.age < 20);
 }
 console.log(moreThan22YO(data));
 
 // problem 3  +++
 // დაწერეთ ფუნქცია რომელიც დააბრუნებს მასივს სადაც იქნება მხოლოდ მომხმარებლების სახელი და გვარი.
 function fullName(data) {
-  const users = data.map((user) => user.firstname && user.lastname);
+  const users = data.map((user) => `${user.firstname} ${user.lastname}`);
   return users;
 }
 console.log(fullName(data));
