@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+form {
+  margin-top: 50px;
+  background-color: #ffffff;
+  width: 70%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form p:nth-child(7) {
+  grid-column: 1/3;
+}
+p {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid blue;
+  width: 220px;
+}
+
+input::placeholder {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+label {
+  color: blue;
+  font-size: 18px;
+}
+button {
+  background: cornflowerblue;
+  width: 170px;
+  height: 50px;
+  margin-top: 38px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.errMessage {
+  color: red;
+}
